@@ -54,10 +54,10 @@ resource "github_actions_variable" "backend_ecs_service" {
 }
 
 
-resource "github_actions_variable" "backend_task_definition" {
+resource "github_actions_variable" "backend_task_family" {
   repository    = var.backend_repo_name
-  variable_name = "ECS_TASK_DEFINITION"
-  value         = "task-definition.json"
+  variable_name = "ECS_TASK_FAMILY"
+  value         = var.ecs_task_family
 }
 
 resource "github_actions_variable" "backend_container_name" {

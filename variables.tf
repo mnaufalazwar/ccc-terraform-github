@@ -38,6 +38,11 @@ variable "ecs_service_name" {
   default = "ccc-backend-service"
 }
 
+variable "ecs_task_family" {
+  type    = string
+  default = "ccc-backend"
+}
+
 variable "ecr_repository_name" {
   type    = string
   default = "ccc-backend"
