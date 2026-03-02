@@ -1,0 +1,15 @@
+# Terraform state (contains secrets, never commit)
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Keep lock file committed for reproducible provider versions
+# (remove .terraform.lock.hcl from ignore)
+.terraform.lock.hcl
+
+# Your actual variable values (contains passwords)
+terraform.tfvars
+
+.env
+*.tfvars
+*.tfvars.json
